@@ -7,11 +7,10 @@ authors = [
     { name = "Rahul-Talari", email = "talarirahulmanidatta@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "openai>=3.42.0",
+    "python-dotenv>=1.2.4",
+]
 
-[project.scripts]
-autonomous-ai-coding-agent = "autonomous_ai_coding_agent:main"
-
-[build-system]
-requires = ["uv_build>=0.12.5,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
